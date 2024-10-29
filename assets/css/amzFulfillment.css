@@ -1,0 +1,467 @@
+/**
+ * Inventory Tab
+ */
+#amzfulfillment-listings {
+	display: none;
+	padding-top: 15px;
+}
+#amzfulfillment-listings-button {
+	cursor: pointer;
+	color: #0073aa;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+/**
+ * Logs Tab
+ */
+table#logList {
+	width: 100%;
+}
+
+/**
+ * Automation Tab
+ */
+#amzfulfillment-rules {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.amzfulfillment-rule-header {
+	display: block;
+	font-weight: 600;
+	padding-left: 150px;
+}
+.amzfulfillment-rule-footer {
+	text-align: center;
+	padding-top: 10px;
+	letter-spacing: 0.8em;
+}
+.amzfulfillment-rule-header .column {
+	float: left;
+	padding-right: 265px;	
+}
+#amzfulfillment-rule-container {
+	min-width: 600px;
+	clear: both;
+}
+.amzfulfillment-add, .amzfulfillment-remove {
+	position: relative;
+	top:4px;
+	height: 1.2em;
+	width: 1.2em;
+	display: inline-block;
+	font-size: 1em;
+	text-indent: -9999px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.amzfulfillment-add {
+	background-color: #00D900;
+	border-color: #149F03;
+	box-shadow: 0 1px 0 #149F03;
+}
+.amzfulfillment-remove {
+	background-color: #FF2626;
+	border-color: #A51D0F;
+	box-shadow: 0 1px 0 #A51D0F;
+}
+.amzfulfillment-add::before, .amzfulfillment-remove::before {
+	line-height: 1;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-indent: 0;
+	text-transform: none;
+	font-variant: normal;
+	font-weight: 400;
+	speak: none;
+}
+.amzfulfillment-add::before {
+	content: "+";
+	color: #FFF;
+}
+.amzfulfillment-remove::before {
+	content: "x";
+	color: #FFF;
+}
+
+/**
+ * License Tab
+ */
+#amzfulfillment-license-setup-box {
+}
+#amzfulfillment-license-setup-box p {
+	margin-left: 3px;
+	margin-bottom: 0;
+}
+#amzfulfillment-license-setup-box img {
+	float: left;
+	margin-right: 10px;
+}
+#amzfulfillment-license-setup-box input[type=text] {
+	width: 100%;
+	text-align: center;
+	line-height: 1.35em;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #fff;
+	color: #32373c;
+	cursor: text;
+}
+.amzfulfillment-license-setup-column {
+	display: block;
+	float: left;
+	width: 360px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	border: none;
+}
+.amzfulfillment-license-setup-column.first {
+	padding-left: 0;
+	border-right: 2px solid #D5D5D5;
+}
+.amzfulfillment-license-setup-column.first input[type=submit] {
+	margin-top: 15px;
+	float: right;
+}
+#amzfulfillment-license-box {
+	position: relative;
+	left: 25px;
+	top: 25px;
+	width: 500px;
+	height: 250px;
+	background-color: #e4e4e4;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	cursor: default;
+	box-shadow: inset 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
+	padding: 10px;
+	background: url(../images/licenseBackground.png);
+}
+#amzfulfillment-license-seal-full {
+	position: absolute;
+	left: 10px;
+	top: 80px;
+	width: 104px;
+	height: 104px;
+	padding: 0;
+	margin: 0;
+	background: url(../images/sealFull.png);
+	
+}
+#amzfulfillment-license-seal-eval {
+	position: absolute;
+	left: 10px;
+	top: 80px;
+	width: 104px;
+	height: 104px;
+	padding: 0;
+	margin: 0;
+	background: url(../images/sealEval.png);
+}
+.amzfulfillment-license-title {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+}
+.amzfulfillment-license-footer {
+	text-align: center;
+	margin-top: 15px;
+}
+.amzfulfillment-license-field {
+	padding-left: 110px;
+}
+.amzfulfillment-license-field p {
+	margin-bottom: 0;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.amzfulfillment-license-field input[type=text] {
+	width: 360px;
+	line-height: 1.4em;
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+	font-weight: 200;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
+	color: #32373c;
+	cursor: text;
+}
+#amzfulfillment-license-upgrade-box {
+	position: relative;
+	left: 25px;
+	top: 50px;
+	width: 500px;
+	border: 0;
+	border-top: 1px dashed #ccc;
+	padding: 10px;
+}
+
+/**
+ * Fulfillment details box
+ */
+.amzfulfillment-detail-box {
+	background-color: black;
+	margin: 0;
+	line-height: 1.4;
+}
+.amzfulfillment-detail-box h2 {
+	display: block;
+	color: #23282d;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 1px solid #eee;
+}
+.amzfulfillment-detail-box h3 {
+	display: block;
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 1.33em 0 0.4em 0;
+}
+.amzfulfillment-detail-box p {
+	display: block;
+	color: #333;
+	font-size: 12px;
+	line-height: 1.0;
+	margin: 0;
+}
+.amzfulfillment-tracking-error {
+	border-left: 4px solid #ffb900;
+	margin: 0;
+	padding: 1.0em 2.0em;
+	line-height: 1.5;
+}
+
+/**
+ * Pro
+ */
+.amzfulfillment-premium-section-tab, .amzfulfillment-pro {
+	font-size: 9px;
+	background: #0074A2;
+	border-radius: 3px;
+	line-height: 9px;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1px 3px;
+	position: relative;
+	top: -1px;
+}
+.amzfulfillment-pro {
+	background: #222;
+	font-style: normal;
+	opacity: 1 !important;
+	margin-right: 3px;
+	text-decoration: none;
+}
+.amzfulfillment-pro:visited {
+	color: #FFF;
+}
+.amzfulfillment-pro:hover {
+	color: #FFF;
+}
+.amzfulfillment-premium-section-tab {
+	background: #444;
+	color: #DDD;
+	border: 1px solid #888;
+	padding: 0 3px;
+}
+.amzfulfillment-premium img, .forminp-image img {
+	width: 100%;
+	height: auto;
+	opacity: 0.7;
+}
+.amzfulfillment-premium-desc {
+	opacity: 0.6;
+}
+.amzfulfillment-getpro-box li {
+	list-style-type: circle;
+	margin-left: 2.0em;
+}
+
+
+/**
+ * Package tracking timeline
+ */
+.tracking-container {
+	overflow: hidden;
+	width: 100%;
+	display: table;
+}
+.tracking-container .tracking-column {
+	float: left;
+	display: table-cell;
+}
+.tracking-container .description {
+	color: #aaa;
+	padding-top: 5px;
+}
+.timeline {
+	position: relative;
+	padding: 20px 0 0 0;
+}
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 230px;
+	bottom: 0px;
+	border-left: 2px solid #ddd;
+}
+.timeline:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.timeline-row {
+	position: relative;
+	text-align: left;
+	clear: both;
+}
+.timeline-row .current, .timeline-row .future, .timeline-row .delivered {
+	position: relative;
+	width: 200px;
+	float: left;
+	margin-bottom: .5em;
+	padding-right: 30px;
+	text-align: right;
+}
+.timeline-row .current:before, .timeline-row .future:before, .timeline-row .delivered:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 100%;
+	top: 15%;
+	right: -8px;
+	z-index: 99;
+}
+.timeline-row .current:before {
+	border: 3px solid #fa8072;
+}
+.timeline-row .future:before {
+	border: 3px solid #ccc;
+}
+.timeline-row .delivered:before {
+	border: 3px solid #79d759;
+}
+.timeline-row .content {
+	margin: 0 0 2em;
+	float: left;
+	padding-left: 30px;
+}
+.timeline-row .description {
+	color: #aaa;
+}
+
+/**
+ * Tables
+ */
+td.amzfulfillment-column-center  {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/**
+ * Message
+ */
+div.amzfulfillment-message {
+	overflow: hidden;
+	position: relative;
+}
+.amzfulfillment-message-close {
+	position: absolute;
+	top: 0;
+	right: 1px;
+	border: none;
+	margin: 0;
+	padding: 9px;
+	background: 0 0;
+	color: #72777c;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/**
+ * Status & Package
+ */
+.amzfulfillment-package>span {
+	cursor: pointer;
+}
+.amzfulfillment-status {
+	color: #777;
+	background: #e5e5e5;
+}
+.amzfulfillment-package {
+	color: #fff;
+	background: #00b9eb;
+}
+.amzfulfillment-status, .amzfulfillment-package {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	line-height: 1.75em;
+	margin: -.25em 10px 10px 0;
+	border-radius: 5px;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	cursor: inherit!important;
+	white-space: nowrap;
+	max-width: 100%;
+}
+.amzfulfillment-status>span, .amzfulfillment-package>span {
+	margin: 0 .5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+mark.amzfulfillment-status.wide {
+	display: block;
+	text-align: center;
+}
+
+/**
+ * WooCommerce Order List
+ */
+#order_amazon_fulfillment {
+	width: 100px;
+	/* text-align: right; */
+	line-height: 1.5em;
+	padding: .75em 1em;
+}
+td.order_amazon_fulfillment {
+	width: 100px;
+	text-align: right;
+}
+
+/**
+ * WooCommerce Order
+ */
+table#amzfulfillment-meta-table {
+	width: 100%;
+}
+#amzfulfillment-meta-table th {
+	vertical-align: top;
+}
+#amzfulfillment-meta-table td {
+	vertical-align: top;
+}
